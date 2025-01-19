@@ -11,7 +11,7 @@ starting_prompt = """당신은 어시스턴트입니다.
 """
 
 prompts = {'START': '[Instruction] 사용자가 이메일을 작성하고 싶다면 "WRITE_EMAIL", 질문을 입력했다면 "QUESTION", 그 외의 요구를 했다면 "OTHER"를 답변합니다. 딱 한 단어만 답변하세요.',
-           'QUESTION': '[Instruction] 질문에 답할 수 있다면 "ANSWER", 추가적인 정보가 필요하다면 "MORE", 답변할 수 있다면 "OTHER"를 답변합니다. 딱 한 단어만 답변하세요.',
+           'QUESTION': '[Instruction] 질문에 답할 수 있다면 "ANSWER", 추가적인 정보가 필요하다면 "MORE", 답변할 수 없다면 "OTHER"를 답변합니다. 딱 한 단어만 답변하세요.',
            'ANSWER': '[Instruction] 사용자의 질문에 답변하세요.',
            'MORE': '[Instruction] 사용자의 앞선 지시에 따라 추가 정보를 요청하세요.',
            'OTHER': '[Instruction] 사용자가 예의바르게 대화를 나누고 있다면 예의바르게 대답하거나 인사를 건네세요. 그렇지 않다면 사용자에게 답변할 수 없다고 알려주세요.',
